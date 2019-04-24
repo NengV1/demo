@@ -18,7 +18,6 @@ public class ProductController {
 
     @GetMapping(value = "/all")
     public List<User> getProduct(){
-
         return repo.findAll();
     }
 
@@ -26,6 +25,7 @@ public class ProductController {
     public User findByName(@PathVariable final String name){
         return repo.findByName(name);
     }
+
 
     @PostMapping(value = "/load")
     public User load(@RequestBody final User product){
