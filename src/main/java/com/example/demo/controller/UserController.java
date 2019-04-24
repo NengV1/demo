@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/users")
-public class ProductController {
+public class UserController {
 
     @Autowired
     UserRepository repo;
