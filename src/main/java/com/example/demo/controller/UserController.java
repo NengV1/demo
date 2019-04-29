@@ -28,11 +28,20 @@ public class UserController {
 
 
     @PostMapping(value = "/load")
-    public User load(@RequestBody final User product){
-        repo.save(product);
-        return repo.findByName(product.getName());
+    public User load(@RequestBody final User user){
+        repo.save(user);
+        return repo.findByName(user.getName());
 
     }
+
+
+    @GetMapping(value = "/Hello")
+    public String Hello(@RequestBody final User user){
+
+        return "Hello"+user;
+
+    }
+
 
 }
 

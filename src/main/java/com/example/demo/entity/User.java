@@ -33,12 +33,12 @@ public class User {
     }
 
     public void setName(String name) {
-        this.name = name;
-    }
+            this.name = name;
+        }
 
-    public String getTeamName() {
-        return teamName;
-    }
+        public String getTeamName() {
+            return teamName;
+        }
 
     public void setTeamName(String teamName) {
         this.teamName = teamName;
@@ -50,6 +50,12 @@ public class User {
 
     public void setSalary(Integer salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "User [id=" + id + ", name=" + name + ", teamName=" + teamName
+                + ", salary=" + salary + "]";
     }
 }
 
